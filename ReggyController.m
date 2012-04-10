@@ -171,17 +171,23 @@
 	// Remove all old colors
 	[[testingStringField textStorage] removeAttribute:NSForegroundColorAttributeName range:totalRange];
 	
-	OGRegularExpression * regEx;
-	[OGRegularExpression setDefaultEscapeCharacter:@"\\"];
-	[OGRegularExpression setDefaultSyntax:[self syntaxForPreference:[[NSUserDefaults standardUserDefaults] stringForKey:@"default_syntax"]]];
+	NSRegularExpression *regEx;
 	
 	NS_DURING
 	// options: OgreFindNotEmptyOption | OgreCaptureGroupOption | OgreIgnoreCaseOption | OgreMultilineOption?
-	unsigned int options;
-	options = OgreFindNotEmptyOption;
-	if ( ![self matchCase] ) options |= OgreIgnoreCaseOption;
-	if ( [self matchMultiLine] ) options |= OgreMultilineOption;
-	regEx = [OGRegularExpression regularExpressionWithString:[regexPatternField string] options:options];
+	unsigned int options = 0u;
+	
+	if (! [self matchCase]) {
+		options |= NSRegularExpressionCaseInsensitive;
+	}
+	
+	if ([self matchMultiLine]) {
+		options |= NSRegularExpressionAnchorsMatchLines;
+	}
+
+	NSError *error;
+	regEx = [NSRegularExpression regularExpressionWithPattern:[regexPatternField string] options:options error:&error];
+	
 	NS_HANDLER
 	[self setHideErrorImage:NO];
 	[statusText setStringValue:[NSString stringWithFormat:@"RegEx Error: %@", [localException reason]]];
@@ -190,23 +196,27 @@
 	
 	[self setHideErrorImage:YES];
 	
-	OGRegularExpressionMatch * match = [regEx matchInString:[testingStringField string]];
-	if ( match == nil )
-	{
+	NSString *matchString = [testingStringField string];
+	NSRange matchRange = NSMakeRange(0, [matchString length]);
+	
+
+	if (! [regEx numberOfMatchesInString:matchString options:0 range:matchRange]) {
 		[statusText setStringValue:@"No Matches Found"];
 		return;
 	}
 	
-	NSMutableArray * matchedRanges = [[NSMutableArray alloc] init];
+	NSMutableArray *matchedRanges = [[NSMutableArray alloc] init];
 	
-	NSEnumerator * enumerator = [regEx matchEnumeratorInString:[testingStringField string]];
-	while ( (match = [enumerator nextObject]) != nil ) {
-		for ( unsigned int i = 0; i < [match count]; i++ )
-			[matchedRanges addObject:NSStringFromRange([match rangeOfSubstringAtIndex:i])];
+	[regEx enumerateMatchesInString:matchString options:0 range:matchRange usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
+		for (unsigned int i = 0; i < [result numberOfRanges]; ++i) {
+			[matchedRanges addObject:NSStringFromRange([result rangeAtIndex:i])];
+		}
 		
-		// If we don't want to show all matches, just exit here.
-		if ( ![self matchAll] ) break;
-	}
+		if (! [self matchAll]) {
+			// If we don't want to show all matches, just exit here.
+			*stop = YES;
+		}
+	}];
 	
 	// Set the status text for how many matches we ran through
 	if ( [matchedRanges count] > 1 )
@@ -278,6 +288,7 @@
 	// DEBUG
 	// NSLog(@"OgreSimpleMatchingSyntax = %d\nOgrePOSIXBasicSyntax = %d\nOgrePOSIXExtendedSyntax = %d\nOgreEmacsSyntax = %d\nOgreGrepSyntax = %d\nOgreGNURegexSyntax = %d\nOgreJavaSyntax = %d\nOgrePerlSyntax = %d\nOgreRubySyntax = %d", OgreSimpleMatchingSyntax, OgrePOSIXBasicSyntax, OgrePOSIXExtendedSyntax, OgreEmacsSyntax, OgreGrepSyntax, OgreGNURegexSyntax, OgreJavaSyntax, OgrePerlSyntax, OgreRubySyntax);
 	
+	/*
 	int ogrekit_syntax = OgreSimpleMatchingSyntax;
 	
 	if ( [preference isEqualToString:@"POSIX Basic"] )
@@ -322,6 +333,8 @@
 	// NSLog(@"Outcome: %d", ogrekit_syntax);
 	
 	return ogrekit_syntax;
+	 */
+	return 0;
 }
 
 @end

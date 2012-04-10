@@ -15,8 +15,6 @@
 		223A62F00BC4908800DB54F9 /* General.png in Resources */ = {isa = PBXBuildFile; fileRef = 223A62EC0BC4908800DB54F9 /* General.png */; };
 		22410F680A6716CD0072CAA6 /* Reggy.icns in Resources */ = {isa = PBXBuildFile; fileRef = 22410F670A6716CD0072CAA6 /* Reggy.icns */; };
 		2283EF770A67D6A000B3EC50 /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 2283EF760A67D6A000B3EC50 /* error.png */; };
-		229F24DB0C02A55300556CD2 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229F24DA0C02A55300556CD2 /* Sparkle.framework */; };
-		229F24F00C02A58500556CD2 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 229F24DA0C02A55300556CD2 /* Sparkle.framework */; };
 		22AAF7E60A67404B002FE5E5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 22AAF7E50A67404B002FE5E5 /* Credits.rtf */; };
 		22C64DBC0BA4F3D000DC4C4A /* Reggy.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 22C64DBB0BA4F3D000DC4C4A /* Reggy.sdef */; };
 		22C64EA10BA4FC4600DC4C4A /* ReggySuite.scriptSuite in Resources */ = {isa = PBXBuildFile; fileRef = 22C64E9F0BA4FC4600DC4C4A /* ReggySuite.scriptSuite */; };
@@ -35,7 +33,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				229F24F00C02A58500556CD2 /* Sparkle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +76,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				229F24DB0C02A55300556CD2 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,11 +285,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
-				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../Builds/Release\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)\"";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -317,11 +308,6 @@
 		C01FCF4C08A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
-				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../Builds/Release\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)\"";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;

@@ -1,7 +1,6 @@
 /* ReggyController */
 
 #import <Cocoa/Cocoa.h>
-#import <OgreKit/OgreKit.h>
 
 @interface ReggyController : NSObject
 {
