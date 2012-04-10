@@ -17,8 +17,6 @@
 		2283EF770A67D6A000B3EC50 /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 2283EF760A67D6A000B3EC50 /* error.png */; };
 		229F24DB0C02A55300556CD2 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229F24DA0C02A55300556CD2 /* Sparkle.framework */; };
 		229F24F00C02A58500556CD2 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 229F24DA0C02A55300556CD2 /* Sparkle.framework */; };
-		22A61A3E0A66C510004DAC52 /* OgreKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22A61A160A66C4AD004DAC52 /* OgreKit.framework */; };
-		22A61A410A66C532004DAC52 /* OgreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A61A160A66C4AD004DAC52 /* OgreKit.framework */; };
 		22AAF7E60A67404B002FE5E5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 22AAF7E50A67404B002FE5E5 /* Credits.rtf */; };
 		22C64DBC0BA4F3D000DC4C4A /* Reggy.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 22C64DBB0BA4F3D000DC4C4A /* Reggy.sdef */; };
 		22C64EA10BA4FC4600DC4C4A /* ReggySuite.scriptSuite in Resources */ = {isa = PBXBuildFile; fileRef = 22C64E9F0BA4FC4600DC4C4A /* ReggySuite.scriptSuite */; };
@@ -38,7 +36,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				229F24F00C02A58500556CD2 /* Sparkle.framework in CopyFiles */,
-				22A61A3E0A66C510004DAC52 /* OgreKit.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22A61A410A66C532004DAC52 /* OgreKit.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				229F24DB0C02A55300556CD2 /* Sparkle.framework in Frameworks */,
 			);
@@ -219,7 +215,11 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Reggy" */;
 			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Reggy */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -288,10 +288,6 @@
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -312,7 +308,6 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				PRODUCT_NAME = Reggy;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
@@ -322,10 +317,6 @@
 		C01FCF4C08A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
@@ -344,7 +335,6 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				PRODUCT_NAME = Reggy;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
@@ -354,32 +344,22 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
 			name = Debug;
 		};
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
 			name = Release;
 		};
