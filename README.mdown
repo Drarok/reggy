@@ -1,0 +1,5 @@
+This branch is based on the 1.3 upstream branch, but aims to replace the OgreKit implementation with Mac OS X 10.7's NSRegularExpression.
+
+Currently, it is functional, but the preferences do not reflect this change.
+
+My main aim with this fork was to fix the anchor matching behaviour present in OgreKit.
