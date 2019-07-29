@@ -3,12 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 45;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2227DBD50A65C37600AD0849 /* RBSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2227DBD10A65C37600AD0849 /* RBSplitView.m */; };
-		2227DBD60A65C37600AD0849 /* RBSplitSubview.m in Sources */ = {isa = PBXBuildFile; fileRef = 2227DBD40A65C37600AD0849 /* RBSplitSubview.m */; };
 		223A62ED0BC4908800DB54F9 /* Updates.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 223A62E90BC4908800DB54F9 /* Updates.tiff */; };
 		223A62EE0BC4908800DB54F9 /* Colors.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 223A62EA0BC4908800DB54F9 /* Colors.tiff */; };
 		223A62EF0BC4908800DB54F9 /* Advanced.png in Resources */ = {isa = PBXBuildFile; fileRef = 223A62EB0BC4908800DB54F9 /* Advanced.png */; };
@@ -20,7 +18,8 @@
 		22C64EA10BA4FC4600DC4C4A /* ReggySuite.scriptSuite in Resources */ = {isa = PBXBuildFile; fileRef = 22C64E9F0BA4FC4600DC4C4A /* ReggySuite.scriptSuite */; };
 		22C64EA20BA4FC4600DC4C4A /* ReggySuite.scriptTerminology in Resources */ = {isa = PBXBuildFile; fileRef = 22C64EA00BA4FC4600DC4C4A /* ReggySuite.scriptTerminology */; };
 		22F93FB10A65E6F8002339E4 /* ReggyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F93FB00A65E6F8002339E4 /* ReggyController.m */; };
-		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		5DFE8F0A22EF01A200AB3D60 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DFE8F0822EF01A200AB3D60 /* MainMenu.xib */; };
+		5DFE8F0C22EF0A2D00AB3D60 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DFE8F0B22EF0A2D00AB3D60 /* Media.xcassets */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -39,14 +38,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
-		2227DBD00A65C37600AD0849 /* RBSplitViewPrivateDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBSplitViewPrivateDefines.h; sourceTree = "<group>"; };
-		2227DBD10A65C37600AD0849 /* RBSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBSplitView.m; sourceTree = "<group>"; };
-		2227DBD20A65C37600AD0849 /* RBSplitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBSplitView.h; sourceTree = "<group>"; };
-		2227DBD30A65C37600AD0849 /* RBSplitSubview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBSplitSubview.h; sourceTree = "<group>"; };
-		2227DBD40A65C37600AD0849 /* RBSplitSubview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBSplitSubview.m; sourceTree = "<group>"; };
 		223A62E90BC4908800DB54F9 /* Updates.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Updates.tiff; sourceTree = "<group>"; };
 		223A62EA0BC4908800DB54F9 /* Colors.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Colors.tiff; sourceTree = "<group>"; };
 		223A62EB0BC4908800DB54F9 /* Advanced.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Advanced.png; sourceTree = "<group>"; };
@@ -62,10 +55,12 @@
 		22F93FAF0A65E6F8002339E4 /* ReggyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReggyController.h; sourceTree = "<group>"; };
 		22F93FB00A65E6F8002339E4 /* ReggyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReggyController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* Reggy_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reggy_Prefix.pch; sourceTree = "<group>"; };
+		5DFE8F0B22EF0A2D00AB3D60 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = ../../../../../System/Volumes/Data/Users/drarok/Development/macOS/reggy/Media.xcassets; sourceTree = "<group>"; };
+		5DFE8F0E22EF3DED00AB3D60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = ../../../../../System/Volumes/Data/Users/drarok/Development/macOS/reggy/Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5DFE8F0F22EF3DFE00AB3D60 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Reggy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reggy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -85,7 +80,6 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				22AAF7940A673981002FE5E5 /* RBSplitView */,
 				22F93FAF0A65E6F8002339E4 /* ReggyController.h */,
 				22F93FB00A65E6F8002339E4 /* ReggyController.m */,
 			);
@@ -118,18 +112,6 @@
 				8D1107320486CEB800E47090 /* Reggy.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		22AAF7940A673981002FE5E5 /* RBSplitView */ = {
-			isa = PBXGroup;
-			children = (
-				2227DBD00A65C37600AD0849 /* RBSplitViewPrivateDefines.h */,
-				2227DBD10A65C37600AD0849 /* RBSplitView.m */,
-				2227DBD20A65C37600AD0849 /* RBSplitView.h */,
-				2227DBD30A65C37600AD0849 /* RBSplitSubview.h */,
-				2227DBD40A65C37600AD0849 /* RBSplitSubview.m */,
-			);
-			name = RBSplitView;
 			sourceTree = "<group>";
 		};
 		29B97314FDCFA39411CA2CEA /* Reggy */ = {
@@ -168,7 +150,8 @@
 				22410F670A6716CD0072CAA6 /* Reggy.icns */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
-				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				5DFE8F0822EF01A200AB3D60 /* MainMenu.xib */,
+				5DFE8F0B22EF0A2D00AB3D60 /* Media.xcassets */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -209,12 +192,16 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1100;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Reggy" */;
 			compatibilityVersion = "Xcode 2.4";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Reggy */;
 			projectDirPath = "";
@@ -230,10 +217,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				5DFE8F0C22EF0A2D00AB3D60 /* Media.xcassets in Resources */,
 				22410F680A6716CD0072CAA6 /* Reggy.icns in Resources */,
 				22AAF7E60A67404B002FE5E5 /* Credits.rtf in Resources */,
+				5DFE8F0A22EF01A200AB3D60 /* MainMenu.xib in Resources */,
 				2283EF770A67D6A000B3EC50 /* error.png in Resources */,
 				22C64DBC0BA4F3D000DC4C4A /* Reggy.sdef in Resources */,
 				22C64EA10BA4FC4600DC4C4A /* ReggySuite.scriptSuite in Resources */,
@@ -253,8 +241,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				2227DBD50A65C37600AD0849 /* RBSplitView.m in Sources */,
-				2227DBD60A65C37600AD0849 /* RBSplitSubview.m in Sources */,
 				22F93FB10A65E6F8002339E4 /* ReggyController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,17 +251,17 @@
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				089C165DFE840E0CC02AAC07 /* English */,
+				5DFE8F0F22EF3DFE00AB3D60 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+		5DFE8F0822EF01A200AB3D60 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				29B97319FDCFA39411CA2CEA /* English */,
+				5DFE8F0E22EF3DED00AB3D60 /* Base */,
 			);
-			name = MainMenu.nib;
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -284,13 +270,14 @@
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../Builds/Release\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)\"";
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
@@ -299,6 +286,8 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamSouder.Reggy;
 				PRODUCT_NAME = Reggy;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
@@ -308,11 +297,13 @@
 		C01FCF4C08A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../Builds/Release\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)\"";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
@@ -321,6 +312,8 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamSouder.Reggy;
 				PRODUCT_NAME = Reggy;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
@@ -330,22 +323,68 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = NO;
-				PREBINDING = NO;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = NO;
-				PREBINDING = NO;
 			};
 			name = Release;
 		};
